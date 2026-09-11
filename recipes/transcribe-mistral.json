@@ -1,0 +1,10 @@
+{
+  "description": "Transcribe an audio file through the Mistral STT skill.",
+  "args": [
+    "file:path",
+    "lang:string=ru",
+    "model:string=voxtral-mini-latest",
+    "diarize:bool=false"
+  ],
+  "template": "{skill_dir}/scripts/transcribe.sh {file} {lang} {model} {diarize}"
+}
